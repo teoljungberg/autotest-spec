@@ -1,67 +1,54 @@
-autotest-suffix
+autotest-spec
 ===============
 
-Enable suffix named tests in Autotest
+Enable specs in Autotest
 
 Description
 -----------
 
-Autotest plugin to enable rails-style test filenames.
+Autotest plugin to enable spec-style test filenames.
 
 Usage
 -----
 
 Install the gem:
 
-    $ gem install autotest-suffix
+    $ gem install autotest-spec
 
 Add the following line to your `.autotest` file:
 
-    require "autotest/suffix"
+    require "autotest/spec"
 
-Now you can name your test files using the rails convention of `foo_test.rb`
-instead of the typical ruby convention of `test_foo.rb`.
+Now you can name your test files using the spec convention of `foo_spec.rb`
 
 Contributing
 ------------
 
-Fork the project from the
-[GitHub repository](https://github.com/blowmage/autotest-suffix).
-
 After checking out the source, run:
 
-    $ gem install hoe
     $ rake newb
 
-This task will install any missing dependencies, run the tests, and generate
-the RDoc. Now you are ready to create and submit a patch.
+This task will install any missing dependencies, and run the tests.
+Now you are ready to create and submit a patch.
 
 Create an issue or pull request on the
-[blowmage/autotest-suffix](https://github.com/blowmage/autotest-suffix) repo
+[teoljungberg/autotest-spec](https://github.com/teoljungberg/autotest-spec) repo
 that links to a branch on your repo or a gist of your patch.
 
-License
--------
+## Contributing
 
-(The MIT License)
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
 
-Copyright (c) 2013 Mike Moore
+    After checking out the source, run:
 
-Permission is hereby granted, free of charge, to any person obtaining
-a copy of this software and associated documentation files (the
-'Software'), to deal in the Software without restriction, including
-without limitation the rights to use, copy, modify, merge, publish,
-distribute, sublicense, and/or sell copies of the Software, and to
-permit persons to whom the Software is furnished to do so, subject to
-the following conditions:
+        ```bash
+        $ rake newb
+        ````
 
-The above copyright notice and this permission notice shall be
-included in all copies or substantial portions of the Software.
+    This task will install any missing dependencies, and run the tests.
+    Now you are ready to create and submit a patch.
 
-THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
-CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
-TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
-SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
