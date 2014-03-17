@@ -1,18 +1,12 @@
-require "rubygems"
-require "hoe"
+require "bundler/gem_tasks"
 
-Hoe.plugin :git
-Hoe.plugin :gemspec
-Hoe.plugin :minitest
+desc 'Setup a new dev computer'
+task newb: [:install_deps, :install] do
+  puts
+  puts 'Happy hacking'
+end
 
-Hoe.spec "autotest-suffix" do
-  developer "Mike Moore", "mike@blowmage.com"
-
-  self.summary     = "Enable suffix named tests in Autotest"
-  self.description = "Autotest plugin to enable rails-style test filenames."
-  self.urls        = ["http://blowmage.com/autotest-suffix"]
-  self.readme_file = "README.md"
-  self.testlib     = "minitest/autorun"
-
-  dependency "minitest", "~> 5.0", :dev
+task :install_deps do
+  puts '--- installing dependencies'
+  system 'bundle install'
 end
