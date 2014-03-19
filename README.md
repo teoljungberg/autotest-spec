@@ -15,10 +15,6 @@ Install the gem:
 
     $ gem install autotest-spec
 
-Add the following line to your `.autotest` file:
-
-    require "autotest/spec"
-
 Now you can name your test files using the spec convention of `foo_spec.rb`
 
 Contributing
