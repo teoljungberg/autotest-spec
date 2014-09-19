@@ -6,6 +6,10 @@ class Autotest::Spec < Autotest
 
     clear_mappings
 
+    self.libs = libs.split ":"
+    self.libs << "spec"
+    self.libs = libs.join File::PATH_SEPARATOR
+
     add_mapping %r%^lib/(.*)\.rb$% do |_, m|
       files_matching %r%^spec/#{m[1]}.*_spec.rb$%
     end

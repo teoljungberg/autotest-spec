@@ -1,5 +1,6 @@
-require 'autotest/spec'
+$: << "lib"
 require 'minitest/spec'
+require 'autotest/spec'
 
 describe Autotest::Spec do
   it 'tests sanity' do
