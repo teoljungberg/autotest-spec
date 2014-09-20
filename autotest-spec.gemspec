@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.name          = "autotest-spec"
   spec.version       = "0.0.2"
   spec.authors       = ["Teo Ljungberg"]
-  spec.email         = ["teo.ljungberg@gmail.com"]
+  spec.email         = ["teo@teoljungberg.com"]
   spec.description   = %q{Autotest plugin to enable spec-style test filenames.}
   spec.summary       = %q{Enable specs in Autotest}
 
